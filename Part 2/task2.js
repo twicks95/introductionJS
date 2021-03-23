@@ -8,7 +8,7 @@ const name = [
 let searchName = (arrayOfString, keyword, limit, limitResult) => {
 
   // Me-return array berisi data yang sudah di filter berdasarkan keyword ke dalam variabel filterResult
-  let filterResult = arrayOfString.filter(function(el) {
+  const filterResult = arrayOfString.filter(function(el) {
     return el.toLowerCase().indexOf(keyword.toLowerCase()) > -1;
   });
 
