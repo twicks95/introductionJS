@@ -1,5 +1,3 @@
-// split, reverse, join
-
 // 1. charAt()
 // Method yang digunakan untuk menangkap karakter pada string di indeks yang diinginkan
 // const example = "Example";
@@ -62,5 +60,6 @@
 
 // const arrayOfNumber = [220, 500, 200, 550, 120, 450];
 // console.log(arrayOfNumber.sort());
+
 // const arrayOfNumber = [5, 2, 50, 20, 120, 45];
 // console.log(arrayOfNumber.sort((a, b) => a - b));

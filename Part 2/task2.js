@@ -5,7 +5,7 @@ const name = [
 "Deirdre", "Diana", "Elizabeth",
 "Ella", "Faith", "Olivia", "Penelope"];
 
-let searchName = (arrayOfString, keyword, limit, limitResult) => {
+const searchName = (arrayOfString, keyword, limit, limitResult) => {
 
   // Me-return array berisi data yang sudah di filter berdasarkan keyword ke dalam variabel filterResult
   const filterResult = arrayOfString.filter(function(el) {
@@ -16,9 +16,9 @@ let searchName = (arrayOfString, keyword, limit, limitResult) => {
   return limitResult(filterResult, limit);
 }
 
-// Callback
+// Callback function
 function limitFilterResult(array, limit) {
   return array.slice(0, limit);
 }
 
-console.log(searchName(name, "an", 3, limitFilterResult));
+console.log(searchName(name, "el", 2, limitFilterResult));

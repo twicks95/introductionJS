@@ -1,16 +1,15 @@
-
 const seleksiNilai = (initialValue, endValue, arrayData) => {
 
-  // Menyiapkan variabel untuk menampung array yang sudah dibandingkan
+  // Menyiapkan variabel untuk menampung array yang sudah di sorting dimana nilai tersebut adalah nilai diantara initialValue dan endValue
   const sortedArrayData = [];
 
   // Cek terlebih dahulu jika parameter nilai awal lebih besar daripada parameter nilai akhir
   if (initialValue > endValue) {
     return "Nilai akhir harus lebih besar dari nilai awal!.";
 
-    // Cek jika jumlah data di dalam array yang ingin dicari kurang dari 6
+  // Cek jika jumlah data di dalam array yang ingin dicari kurang dari 6
   } else if (arrayData.length < 6) {
-    return "Jumlah data dalam array kurang dari 6!";
+    return "Jumlah data dalam array harus lebih dari 5!";
 
   } else {
 
@@ -18,11 +17,12 @@ const seleksiNilai = (initialValue, endValue, arrayData) => {
       // Cek apakah angka yang di looping ada di antara nilai awal dan nilai akhir
       if (el > initialValue && el < endValue) {
         sortedArrayData.push(el);
-
-        // Jika tidak ditemukan angka di dalam array yang memiliki nilai diantara nilai awal dan akhir
-      } else {
-        return "Jumlah angka dalam arrayData tidak ada!";
-      }
+      } 
+    }
+    
+    // Jika tidak ditemukan angka di dalam array yang memiliki nilai diantara nilai awal dan akhir
+    if (sortedArrayData.length < 0) {
+      return "Jumlah angka dalam arrayData tidak ada!";
     }
 
     return sortedArrayData.sort((a, b) => a - b);;
