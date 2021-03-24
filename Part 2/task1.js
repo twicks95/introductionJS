@@ -61,6 +61,6 @@
 // console.log(arrayOfString.sort());
 
 // const arrayOfNumber = [220, 500, 200, 550, 120, 450];
-const arrayOfNumber = [2, 5, 20, 50, 120, 45];
+const arrayOfNumber = [5, 2, 50, 20, 120, 45];
 console.log(arrayOfNumber.sort((a, b) => a - b));
 // console.log(arrayOfNumber.sort());
