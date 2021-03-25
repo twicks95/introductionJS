@@ -15,9 +15,9 @@ const cekHariKerja = (day) => {
 }
 
 // then...catch
-cekHariKerja("sabtu")
-  .then(result => console.log(result))
-  .catch(error => console.log(error));
+// cekHariKerja("sabtu")
+//   .then(result => console.log(result))
+//   .catch(error => console.log(error));
 // then catch adalah method yang digunakan untuk handling hasil proses asynchronous menggunakan promise, dimana method then akan menangkap dan menjalankan fungsi resolve sebagai callback dari sebuah proses yang sudah berhasil dan jika tidak maka method catch akan otomatis menangkap dan menjalankan fungsi reject untuk menampilkan proses yang akan dilakukan ketika gagal. 
 
 
@@ -27,7 +27,7 @@ async function asyncAwait() {
     let result = await cekHariKerja("sabtu");
     console.log(`${result} adalah hari kerja`);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 }
 asyncAwait();
