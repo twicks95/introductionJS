@@ -34,4 +34,7 @@ async function asyncAwait() {
   }
 }
 asyncAwait();
-// try catch adalah cara lain dari error handling selain then catch. Menggunakan async function yang akan menandakan bahwa fungsi tersebut akan selalu mengembalikan sebuah promise. Dan keyword await yang berarti menunggu hingga proses asynchronous selesai apakah berhasil atau gagal. Ketika proses berhasil maka kode di dalam blok try setelah await dari proses asynchronous akan dieksekusi namun jika tidak maka blok kode catch akan dieksekusi dan menerima 1 parameter berupa error.
+/* try catch adalah cara lain dari error handling selain then catch. Menggunakan async function yang akan menandakan 
+bahwa fungsi tersebut akan selalu mengembalikan sebuah promise. Dan keyword await yang berarti menunggu hingga 
+proses asynchronous selesai apakah berhasil atau gagal. Ketika proses berhasil maka kode di dalam blok try setelah await 
+dari proses asynchronous akan dieksekusi namun jika tidak maka blok kode catch akan dieksekusi dan menerima 1 parameter berupa error. */
