@@ -31,10 +31,10 @@ const getNameFromDataStudents = (src) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       let error = false
-      const dataS = src
+      const dataStudents = src
 
       if (!error) {
-        resolve(dataS)
+        resolve(dataStudents)
       } else {
         reject(new Error("There is no data available"))
       }
@@ -52,3 +52,27 @@ getNameFromDataStudents(students)
 
 
 // 2
+const decreaseItemStock = () => {
+  return new Promise((resolve, reject) => {
+    
+    setTimeout(() => {
+      const item = {name: "Item1", stock: 14}
+
+      let someoneHasBought = true;
+      
+      if(someoneHasBought) {
+        resolve(item)
+      } else {
+        reject(new Error("We still have " + item.stock + " items in our warehouse"))
+      }
+    }, 3000)
+
+  })
+}
+
+decreaseItemStock()
+  .then((item) => {
+    item.stock -= 1
+    console.log(item);
+  })
+  .catch((error) => console.log(error.message))
