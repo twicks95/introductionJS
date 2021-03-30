@@ -1,7 +1,7 @@
 const divideAndSort = (sequenceOfNumbers) => {
 
-  const sequenceNumbers = sequenceOfNumbers.toString()                                // Ubah tipe data menjadi string
-  const arrayOfStringsNumber = sequenceNumbers.split("0")                             // Pecah string menjadi array dengan delimiter string 0
+  const sequenceNumbers = sequenceOfNumbers.toString()                                
+  const arrayOfStringsNumber = sequenceNumbers.split("0")                             
 
   const arrayWithSortedNumberAtEachElement = arrayOfStringsNumber.map((element) => {  // Akan berisi array dengan setiap elemen yang sudah di sorting nilainya
     
@@ -21,10 +21,10 @@ const divideAndSort = (sequenceOfNumbers) => {
     }
     /* Akhir proses sorting elemen */
     
-    return sortedNumber                                                               // Mengembalikan string dengan angka yang sudah di sorting, sehinnga array map akan berisi ['2578']
+    return sortedNumber                                                               // Mengembalikan string dengan angka yang sudah di sorting, sehingga array map akan berisi ['2578']
   })
 
-  /* Tiap elemen array hasil method map masukan ke variabel */
+  /* Tiap elemen array hasil method map akan dimasukan ke variabel */
   let printSortedNumber = ""
   for(const element of arrayWithSortedNumberAtEachElement) {
     printSortedNumber += element
