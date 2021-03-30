@@ -33,7 +33,6 @@ const arkFood = (price = 0, voucher = "false", distance = 0, tax = false) => {
 }
 
 function discount50Percent(price) {
-  let discount = 0
   const maxDiscount = 50000
 
   if (price >= 50000) {
@@ -41,12 +40,13 @@ function discount50Percent(price) {
     if (discount >= maxDiscount) {
       discount = maxDiscount
     }
+  } else {
+    discount = 0
   }
   return discount
 }
 
 function discount60Percent(price) {
-  let discount = 0
   const maxDiscount = 30000;
 
   if (price >= 25000) {
@@ -54,12 +54,14 @@ function discount60Percent(price) {
     if (discount >= maxDiscount) {
       discount = maxDiscount
     }
+  } else {
+    discount = 0
   }
   return discount
 }
 
 // RUN THE CODE BELOW:
 // console.log(arkFood(25000, "ARKAFOOD5", 5, true))
-// console.log(arkFood(75000, "ARKAFOOD5", 5, true))
+console.log(arkFood(75000, "ARKAFOOD5", 5, true))
 // console.log(arkFood(25000, "DITRAKTIRDEMY", 10, true))
 // console.log(arkFood(15000, "DITRAKTIRDEMY", 10, false))
