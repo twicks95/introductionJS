@@ -58,9 +58,8 @@ function discount60Percent(price) {
   return discount
 }
 
-// RUNNING THE CODE BELOW:
+// RUN THE CODE BELOW:
 // console.log(arkFood(25000, "ARKAFOOD5", 5, true))
-console.log(arkFood(75000, "ARKAFOOD5", 5, true))
+// console.log(arkFood(75000, "ARKAFOOD5", 5, true))
 // console.log(arkFood(25000, "DITRAKTIRDEMY", 10, true))
 // console.log(arkFood(15000, "DITRAKTIRDEMY", 10, false))
-// console.log(arkFood())
