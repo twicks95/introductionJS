@@ -1,6 +1,6 @@
 // Reverse Word
 const invertWord = (text) => {
-  let arrayOfWords = text.split(" ")
+  const arrayOfWords = text.split(" ")
   let invertedWord = ""
 
   for (let i = arrayOfWords.length - 1; i >= 0; i--) {
