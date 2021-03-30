@@ -11,10 +11,10 @@ const arkFood = (price = 0, voucher = "false", distance = 0, tax = false) => {
   switch (voucher.toUpperCase()) {
     case "ARKAFOOD5":
       discount = discount50Percent(price)
-      break;
+      break
     case "DITRAKTIRDEMY":
       discount = discount60Percent(price)
-      break;
+      break
     default:
       discount = 0
       break
@@ -37,7 +37,7 @@ function discount50Percent(price) {
 
   if (price >= 50000) {
     discount = (50 / 100) * price
-    if (discount >= maxDiscount) {
+    if (discount > maxDiscount) {
       discount = maxDiscount
     }
   } else {
@@ -51,7 +51,7 @@ function discount60Percent(price) {
 
   if (price >= 25000) {
     discount = (60 / 100) * price
-    if (discount >= maxDiscount) {
+    if (discount > maxDiscount) {
       discount = maxDiscount
     }
   } else {
