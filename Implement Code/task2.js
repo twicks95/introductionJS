@@ -11,4 +11,3 @@ const invertWord = (text) => {
 }
 
 console.log(invertWord("Saya Belajar Javascript"))
-console.log(invertWord("Javascript Belajar Saya"))

@@ -6,7 +6,7 @@ const isTextPalindrom = (text) => {
   for (let i = txt.length - 1; i >= 0; i--) {
     reverseText += txt[i]
   }
-
+  
   if (txt === reverseText) {
     return "Palindrom";
   } else {
@@ -14,7 +14,7 @@ const isTextPalindrom = (text) => {
   }
 }
 
-console.log(isTextPalindrom("Kasur Haji Ijah Rusak"))
-console.log(isTextPalindrom("Kasur Haji Ijah Rusak Slur"))
+console.log(isTextPalindrom("Malam"))
+// console.log(isTextPalindrom("Kasur Haji Ijah Rusak"))
 
 
